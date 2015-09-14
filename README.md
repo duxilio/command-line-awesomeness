@@ -46,7 +46,7 @@ foo bar baz
 3. `Ctrl + C` cancels a command (duh)
 
 ### \#9 Piping Commands
-List all files (including dotfiles using `-a`) and find a file which name contains `names`
+Get the output of command A and use it as the input for command B. Example: List all files (including dotfiles using `-a`) and find a file which name contains `names`
 ```
 ls -a | grep names
 ```
@@ -63,3 +63,22 @@ echo "contents of file" > filename.md
 ```
 echo "appending this to file" >> filename.md
 ```
+
+### \#12 Moving/Renaming Files/Folders
+Use the `-R` flag for folders
+```
+mv current-filename.md new-filename.md
+```
+
+### \#13 Copying Files/Folders
+Use the `-R` flag for folders
+```
+cp filename.md filename-2.md
+```
+
+### \#14 Awesomly Copying
+In some (most actually) cases its super usefull to use `rsync` instead of `cp` when copying entire folders. This skips all files that are already in the destination and unchanged.
+```
+rsync ./ ~/path/to/dest/
+```
+[Super duper usefull for copying files to a server.](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps)
