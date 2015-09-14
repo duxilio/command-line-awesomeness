@@ -44,3 +44,22 @@ foo bar baz
 1. `Alt + Click` lets you place your cursor by clicking
 2. `Ctrl + A` moves your cursor to the beginning of the line
 3. `Ctrl + C` cancels a command (duh)
+
+### \#9 Piping Commands
+List all files (including dotfiles using `-a`) and find a file which name contains `names`
+```
+ls -a | grep names
+```
+
+### \#10 Creating files
+```
+touch super-rad-kittens.html
+```
+
+### \#11 Creating/Appending to files
+```
+echo "contents of file" > filename.md
+```
+```
+echo "appending this to file" >> filename.md
+```
