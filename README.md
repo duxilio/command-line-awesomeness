@@ -82,3 +82,9 @@ In some (most actually) cases its super usefull to use `rsync` instead of `cp` w
 rsync ./ ~/path/to/dest/
 ```
 [Super duper usefull for copying files to a server.](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps)
+
+### \#14 `grep` using RegExp
+If you're not familiar with RegExp [learn it](http://regexone.com/). No I'm serious, start right now, you won't regret it.
+```
+grep -E "\d" k1ttens
+```
